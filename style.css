@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #ff7800;
-    --primary-glow: rgba(255, 120, 0, 0.4);
-    --bg-dark: #08080a;
-    --bg-card: rgba(21, 21, 25, 0.7);
-    --bg-sidebar: #0f0f12;
+    --primary-color: #e10600;
+    --primary-glow: rgba(225, 6, 0, 0.45);
+    --bg-dark: #050505;
+    --bg-card: rgba(12, 12, 12, 0.85);
+    --bg-sidebar: #0a0a0a;
     --text-main: #f0f0f5;
     --text-dim: #92929e;
     --glass-bg: rgba(255, 255, 255, 0.02);
@@ -139,7 +139,7 @@ body {
 .blob-1 {
     width: 320px;
     height: 320px;
-    background: radial-gradient(circle, rgba(255, 120, 0, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(225, 6, 0, 0.3) 0%, transparent 70%);
     top: -50px;
     left: -50px;
 }
@@ -168,14 +168,14 @@ body {
     width: 100%;
     max-width: 420px;
     text-align: center;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 120, 0, 0.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(225, 6, 0, 0.02);
     transition: border-color 0.4s ease, box-shadow 0.4s ease;
     z-index: 1;
 }
 
 .login-box:hover {
-    border-color: rgba(255, 120, 0, 0.25);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(255, 120, 0, 0.08);
+    border-color: rgba(225, 6, 0, 0.25);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(225, 6, 0, 0.08);
 }
 
 .brand-header {
@@ -188,7 +188,7 @@ body {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--primary-color);
-    box-shadow: 0 0 25px rgba(255, 120, 0, 0.4);
+    box-shadow: 0 0 25px rgba(225, 6, 0, 0.4);
     margin-bottom: 20px;
     display: inline-block;
     animation: logoBreathe 4s infinite alternate ease-in-out;
@@ -196,11 +196,11 @@ body {
 
 @keyframes logoBreathe {
     0% {
-        box-shadow: 0 0 15px rgba(255, 120, 0, 0.3), inset 0 0 15px rgba(255, 120, 0, 0.2);
+        box-shadow: 0 0 15px rgba(225, 6, 0, 0.3), inset 0 0 15px rgba(225, 6, 0, 0.2);
         transform: scale(1);
     }
     100% {
-        box-shadow: 0 0 35px rgba(255, 120, 0, 0.6), inset 0 0 25px rgba(255, 120, 0, 0.4);
+        box-shadow: 0 0 35px rgba(225, 6, 0, 0.6), inset 0 0 25px rgba(225, 6, 0, 0.4);
         transform: scale(1.03);
     }
 }
@@ -208,11 +208,11 @@ body {
 .glow-text {
     font-size: 2.3rem;
     font-weight: 900;
-    background: linear-gradient(135deg, #ffffff 30%, #ff881a 100%);
+    background: linear-gradient(135deg, #ffffff 30%, #ff2a2a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
-    text-shadow: 0 5px 15px rgba(255, 120, 0, 0.15);
+    text-shadow: 0 5px 15px rgba(225, 6, 0, 0.15);
 }
 
 .subtitle {
@@ -253,7 +253,7 @@ body {
 
 .input-group input:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 15px rgba(255, 120, 0, 0.2);
+    box-shadow: 0 0 15px rgba(225, 6, 0, 0.2);
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -264,7 +264,7 @@ body {
 .primary-btn {
     width: 100%;
     padding: 16px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #d45d00 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #a00500 100%);
     border: none;
     border-radius: 16px;
     color: white;
@@ -398,15 +398,15 @@ body {
 
 .nav-links li:hover {
     color: white;
-    background: rgba(255, 120, 0, 0.05);
-    border-color: rgba(255, 120, 0, 0.1);
+    background: rgba(225, 6, 0, 0.05);
+    border-color: rgba(225, 6, 0, 0.1);
 }
 
 .nav-links li.active {
-    background: linear-gradient(135deg, rgba(255, 120, 0, 0.15) 0%, rgba(255, 120, 0, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.15) 0%, rgba(225, 6, 0, 0.05) 100%);
     color: var(--primary-color);
-    border-color: rgba(255, 120, 0, 0.25);
-    box-shadow: 0 4px 15px rgba(255, 120, 0, 0.05);
+    border-color: rgba(225, 6, 0, 0.25);
+    box-shadow: 0 4px 15px rgba(225, 6, 0, 0.05);
 }
 
 .logout-link {
@@ -472,10 +472,10 @@ header {
 }
 
 .glow-username-admin {
-    background: linear-gradient(135deg, #ffffff 40%, #ff7800 100%);
+    background: linear-gradient(135deg, #ffffff 40%, #e10600 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 15px rgba(255, 120, 0, 0.25);
+    text-shadow: 0 0 15px rgba(225, 6, 0, 0.25);
     font-weight: 900;
 }
 
@@ -503,9 +503,9 @@ header {
 }
 
 .badge-admin {
-    background: rgba(255, 120, 0, 0.15);
+    background: rgba(225, 6, 0, 0.15);
     color: var(--primary-color);
-    border: 1px solid rgba(255, 120, 0, 0.3);
+    border: 1px solid rgba(225, 6, 0, 0.3);
 }
 
 .badge-reseller {
@@ -538,8 +538,8 @@ header {
 }
 
 .stat-card.highlight-card {
-    border-color: rgba(255, 120, 0, 0.25);
-    background: linear-gradient(135deg, rgba(255, 120, 0, 0.08) 0%, rgba(21, 21, 25, 0.7) 100%);
+    border-color: rgba(225, 6, 0, 0.25);
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.08) 0%, rgba(21, 21, 25, 0.7) 100%);
 }
 
 .card-glow {
@@ -548,7 +548,7 @@ header {
     left: -50px;
     width: 150px;
     height: 150px;
-    background: radial-gradient(circle, rgba(255, 120, 0, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(225, 6, 0, 0.15) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -583,7 +583,7 @@ header {
 
 #stat-balance {
     color: var(--primary-color);
-    text-shadow: 0 0 15px rgba(255, 120, 0, 0.25);
+    text-shadow: 0 0 15px rgba(225, 6, 0, 0.25);
 }
 
 /* Tables and Action Bar */
@@ -616,7 +616,7 @@ table {
 }
 
 thead {
-    background: linear-gradient(90deg, rgba(255, 120, 0, 0.05) 0%, rgba(0, 212, 255, 0.03) 50%, rgba(255, 68, 68, 0.04) 100%);
+    background: linear-gradient(90deg, rgba(225, 6, 0, 0.05) 0%, rgba(0, 212, 255, 0.03) 50%, rgba(255, 68, 68, 0.04) 100%);
     border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -982,7 +982,7 @@ input:checked + .slider:before {
 
 .price-input-card input:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(255, 120, 0, 0.15);
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.15);
 }
 
 /* Modals Overlay */
@@ -1082,7 +1082,7 @@ input:checked + .slider:before {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 1.15rem;
-    text-shadow: 0 0 10px rgba(255, 120, 0, 0.15);
+    text-shadow: 0 0 10px rgba(225, 6, 0, 0.15);
 }
 
 #copy-key-btn {
@@ -1264,7 +1264,7 @@ input:checked + .slider:before {
 /* Ban Button Hover States */
 .ban-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(255, 120, 0, 0.2);
+    box-shadow: 0 5px 12px rgba(225, 6, 0, 0.2);
 }
 
 .ban-btn.unban:hover {
@@ -1333,13 +1333,13 @@ input:checked + .slider:before {
 }
 
 .custom-dropdown-trigger:hover {
-    border-color: rgba(255, 120, 0, 0.4);
-    box-shadow: 0 0 10px rgba(255, 120, 0, 0.1);
+    border-color: rgba(225, 6, 0, 0.4);
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.1);
 }
 
 .custom-dropdown.open .custom-dropdown-trigger {
     border-color: var(--primary-color);
-    box-shadow: 0 0 15px rgba(255, 120, 0, 0.2);
+    box-shadow: 0 0 15px rgba(225, 6, 0, 0.2);
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -1389,13 +1389,13 @@ input:checked + .slider:before {
 
 .custom-dropdown-item:hover {
     color: white;
-    background: rgba(255, 120, 0, 0.08);
+    background: rgba(225, 6, 0, 0.08);
 }
 
 .custom-dropdown-item.active {
-    background: linear-gradient(135deg, rgba(255, 120, 0, 0.15) 0%, rgba(255, 120, 0, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.15) 0%, rgba(225, 6, 0, 0.05) 100%);
     color: var(--primary-color);
-    border: 1px solid rgba(255, 120, 0, 0.2);
+    border: 1px solid rgba(225, 6, 0, 0.2);
 }
 
 .custom-dropdown-group-title {
@@ -1421,14 +1421,14 @@ input:checked + .slider:before {
 .engine-stats-column {
     padding: 20px !important;
     background: linear-gradient(135deg, rgba(21, 21, 25, 0.8) 0%, rgba(15, 15, 18, 0.9) 100%) !important;
-    border: 1px solid rgba(255, 120, 0, 0.15) !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 120, 0, 0.02) !important;
+    border: 1px solid rgba(225, 6, 0, 0.15) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(225, 6, 0, 0.02) !important;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .engine-stats-column:hover {
-    border-color: rgba(255, 120, 0, 0.3) !important;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 120, 0, 0.05), inset 0 0 20px rgba(255, 120, 0, 0.04) !important;
+    border-color: rgba(225, 6, 0, 0.3) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 30px rgba(225, 6, 0, 0.05), inset 0 0 20px rgba(225, 6, 0, 0.04) !important;
     transform: translateY(-2px);
 }
 
@@ -1442,8 +1442,8 @@ input:checked + .slider:before {
 }
 
 .engine-stat-row:hover {
-    background: rgba(255, 120, 0, 0.03);
-    border-color: rgba(255, 120, 0, 0.2);
+    background: rgba(225, 6, 0, 0.03);
+    border-color: rgba(225, 6, 0, 0.2);
     transform: translateX(6px);
 }
 
@@ -1625,12 +1625,12 @@ body.light-mode .custom-dropdown-item {
 
 body.light-mode .custom-dropdown-item:hover {
     color: #1a1a1c !important;
-    background: rgba(255, 120, 0, 0.08) !important;
+    background: rgba(225, 6, 0, 0.08) !important;
 }
 
 body.light-mode .custom-dropdown-item.active {
     color: var(--primary-color) !important;
-    background: rgba(255, 120, 0, 0.1) !important;
+    background: rgba(225, 6, 0, 0.1) !important;
 }
 
 body.light-mode .text-white {
@@ -1698,8 +1698,8 @@ body.light-mode .engine-stat-row {
 }
 
 body.light-mode .engine-stat-row:hover {
-    background: rgba(255, 120, 0, 0.02) !important;
-    border-color: rgba(255, 120, 0, 0.15) !important;
+    background: rgba(225, 6, 0, 0.02) !important;
+    border-color: rgba(225, 6, 0, 0.15) !important;
 }
 
 body.light-mode .pagination-controls span {
