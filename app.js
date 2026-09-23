@@ -224,7 +224,7 @@ onAuthStateChanged(auth, async (user) => {
             console.log("User detected:", user.uid);
 
             // Hardcoded check for admin
-            if (user.uid === "aqk66QNjKUbub1dKU353OTUwN9N2") {
+            if (user.uid === "PON_AQUI_TU_UID_DE_ADMIN") {
                 currentUserData = { name: "Lion Admin", role: "admin" };
                 loginScreen.classList.add('hidden');
                 mainDashboard.classList.remove('hidden');
@@ -524,13 +524,13 @@ generateBtn.addEventListener('click', async () => {
             await addDoc(collection(db, "keys"), {
                 key: keyVal,
                 duration: duration,
-                status: isTrial ? "active" : "unused",
+                status: "active",
                 reseller_uid: auth.currentUser.uid,
-                reseller_name: currentUserData.name,
+                reseller_name: currentUserData.name || "Admin",
                 is_trial: isTrial,
                 hwid: null,
-                activated_at: isTrial ? serverTimestamp() : null,
-                expiry_date: isTrial ? new Date(Date.now() + duration * 24 * 60 * 60 * 1000) : null,
+                activated_at: serverTimestamp(),
+                expiry_date: new Date(Date.now() + duration * 24 * 60 * 60 * 1000),
                 created_at: serverTimestamp(),
                 sec_data: "0x4f06288,0x4e9feb8,0x4dde3e0,0x4dfe838,0x2d911e0,0x3068c94,0x0294879d,0x02948795,0x029487a5"
             });
