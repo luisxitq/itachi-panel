@@ -224,8 +224,8 @@ onAuthStateChanged(auth, async (user) => {
             console.log("User detected:", user.uid);
 
             // Hardcoded check for admin
-            if (user.uid === "aqk66QNjKUbub1dKU353OTUwN9N2") {
-                currentUserData = { name: "Lion Admin", role: "admin" };
+            if (user.uid === "PON_AQUI_TU_UID_DE_ADMIN") {
+                currentUserData = { name: "Itachi Admin", role: "admin" };
                 loginScreen.classList.add('hidden');
                 mainDashboard.classList.remove('hidden');
                 setupDashboard();
@@ -616,7 +616,7 @@ if (generateTrialsBtn) {
             document.getElementById('result-duration').innerText = `${durationText} Trial (${limitVal === 'unlimited' ? 'Unlimited' : limitVal + ' Device'} Limit)`;
             
             if (count > 1) {
-                document.getElementById('generated-key-display').innerHTML = `<textarea readonly class="glass-input" style="width: 100%; height: 120px; font-family: monospace; font-size: 0.9rem; resize: none; margin-top: 10px; color: #ff7800; border-color: rgba(255, 120, 0, 0.3); background: rgba(0,0,0,0.4);">${generatedKeys.join('\n')}</textarea>`;
+                document.getElementById('generated-key-display').innerHTML = `<textarea readonly class="glass-input" style="width: 100%; height: 120px; font-family: monospace; font-size: 0.9rem; resize: none; margin-top: 10px; color: #e10600; border-color: rgba(225, 6, 0, 0.3); background: rgba(0,0,0,0.4);">${generatedKeys.join('\n')}</textarea>`;
             } else {
                 document.getElementById('generated-key-display').innerText = lastKey;
             }
@@ -650,7 +650,7 @@ function generateKeyString() {
         for (let i = 0; i < 5; i++) s += chars.charAt(Math.floor(Math.random() * chars.length));
         return s;
     };
-    return `LIONX-${segment()}-${segment()}-${segment()}`;
+    return `ITACHI-${segment()}-${segment()}-${segment()}`;
 }
 
 // --- DATA LOADING & STATS ---
@@ -758,7 +758,7 @@ async function loadKeys(direction = 'initial') {
             }
 
             const isBanned = data.status === 'banned';
-            const banBtnHtml = `<button class="ban-btn small ${isBanned ? 'unban' : ''}" data-id="${docSnap.id}" title="${isBanned ? 'Unban Key' : 'Ban Key'}" style="margin-right: 8px; background: ${isBanned ? 'rgba(0, 255, 136, 0.1)' : 'rgba(255, 120, 0, 0.1)'}; border: 1px solid ${isBanned ? 'rgba(0, 255, 136, 0.2)' : 'rgba(255, 120, 0, 0.2)'}; color: ${isBanned ? 'var(--success-color)' : 'var(--primary-color)'}; padding: 8px 12px; border-radius: 8px; cursor: pointer; transition: 0.3s;"><i class="fas ${isBanned ? 'fa-key' : 'fa-ban'}"></i></button>`;
+            const banBtnHtml = `<button class="ban-btn small ${isBanned ? 'unban' : ''}" data-id="${docSnap.id}" title="${isBanned ? 'Unban Key' : 'Ban Key'}" style="margin-right: 8px; background: ${isBanned ? 'rgba(0, 255, 136, 0.1)' : 'rgba(225, 6, 0, 0.1)'}; border: 1px solid ${isBanned ? 'rgba(0, 255, 136, 0.2)' : 'rgba(225, 6, 0, 0.2)'}; color: ${isBanned ? 'var(--success-color)' : 'var(--primary-color)'}; padding: 8px 12px; border-radius: 8px; cursor: pointer; transition: 0.3s;"><i class="fas ${isBanned ? 'fa-key' : 'fa-ban'}"></i></button>`;
 
             let hwidText = data.hwid || 'N/A';
             if (data.is_trial || data.device_limit !== undefined) {
@@ -1345,7 +1345,7 @@ function customConfirm(title, message, options = {}) {
             iconEl.className = "fas fa-ban";
             iconEl.style.color = "var(--primary-color)";
             iconEl.style.textShadow = "0 0 20px var(--primary-glow)";
-            confirmBtn.style.background = "linear-gradient(135deg, var(--primary-color) 0%, #d45d00 100%)";
+            confirmBtn.style.background = "linear-gradient(135deg, var(--primary-color) 0%, #a00500 100%)";
             confirmBtn.innerText = options.confirmText || "Ban";
         } else if (type === 'unban') {
             iconEl.className = "fas fa-key";
@@ -1357,7 +1357,7 @@ function customConfirm(title, message, options = {}) {
             iconEl.className = "fas fa-triangle-exclamation";
             iconEl.style.color = "var(--primary-color)";
             iconEl.style.textShadow = "0 0 20px var(--primary-glow)";
-            confirmBtn.style.background = "linear-gradient(135deg, var(--primary-color) 0%, #d45d00 100%)";
+            confirmBtn.style.background = "linear-gradient(135deg, var(--primary-color) 0%, #a00500 100%)";
             confirmBtn.innerText = options.confirmText || "Confirm";
         }
 
