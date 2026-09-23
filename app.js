@@ -4,12 +4,12 @@ import { getFirestore, doc, getDoc, getDocs, collection, query, where, addDoc, s
 
 // --- FIREBASE CONFIGURATION ---
 const firebaseConfig = {
-    apiKey: "AIzaSyCzfbotjRCNYM2j_wRwICU03cx6EbKjWfE",
-    authDomain: "lionengine.firebaseapp.com",
-    projectId: "lionengine",
-    storageBucket: "lionengine.firebasestorage.app",
-    messagingSenderId: "449107794375",
-    appId: "1:449107794375:web:57124ecae474162b0de1e2"
+  apiKey: "AIzaSyCI4JM73Zm1J3CAL2owBZR5qrzXYqqMERI",
+  authDomain: "itachi-engine.firebaseapp.com",
+  projectId: "itachi-engine",
+  storageBucket: "itachi-engine.firebasestorage.app",
+  messagingSenderId: "513311119229",
+  appId: "1:513311119229:web:98ec45eec4625079025e14"
 };
 
 const app = initializeApp(firebaseConfig);
