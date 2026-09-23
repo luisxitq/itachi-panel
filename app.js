@@ -4,12 +4,12 @@ import { getFirestore, doc, getDoc, getDocs, collection, query, where, addDoc, s
 
 // --- FIREBASE CONFIGURATION ---
 const firebaseConfig = {
-  apiKey: "AIzaSyCI4JM73Zm1J3CAL2owBZR5qrzXYqqMERI",
-  authDomain: "itachi-engine.firebaseapp.com",
-  projectId: "itachi-engine",
-  storageBucket: "itachi-engine.firebasestorage.app",
-  messagingSenderId: "513311119229",
-  appId: "1:513311119229:web:98ec45eec4625079025e14"
+    apiKey: "AIzaSyCI4JM73Zm1J3CAL2owBZR5qrzXYqqMERI",
+    authDomain: "itachi-engine.firebaseapp.com",
+    projectId: "itachi-engine",
+    storageBucket: "itachi-engine.firebasestorage.app",
+    messagingSenderId: "513311119229",
+    appId: "1:513311119229:web:98ec45eec4625079025e14"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -224,7 +224,7 @@ onAuthStateChanged(auth, async (user) => {
             console.log("User detected:", user.uid);
 
             // Hardcoded check for admin
-            if (user.uid === "aqk66QNjKUbub1dKU353OTUwN9N2") {
+            if (user.uid === "PON_AQUI_TU_UID_DE_ADMIN") {
                 currentUserData = { name: "Lion Admin", role: "admin" };
                 loginScreen.classList.add('hidden');
                 mainDashboard.classList.remove('hidden');
@@ -531,7 +531,8 @@ generateBtn.addEventListener('click', async () => {
                 hwid: null,
                 activated_at: isTrial ? serverTimestamp() : null,
                 expiry_date: isTrial ? new Date(Date.now() + duration * 24 * 60 * 60 * 1000) : null,
-                created_at: serverTimestamp()
+                created_at: serverTimestamp(),
+                sec_data: "0x4f06288,0x4e9feb8,0x4dde3e0,0x4dfe838,0x2d911e0,0x3068c94,0x0294879d,0x02948795,0x029487a5"
             });
         }
 
