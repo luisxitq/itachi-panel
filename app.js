@@ -224,7 +224,7 @@ onAuthStateChanged(auth, async (user) => {
             console.log("User detected:", user.uid);
 
             // Hardcoded check for admin
-            if (user.uid === "PON_AQUI_TU_UID_DE_ADMIN") {
+            if (user.uid === "aqk66QNjKUbub1dKU353OTUwN9N2") {
                 currentUserData = { name: "Lion Admin", role: "admin" };
                 loginScreen.classList.add('hidden');
                 mainDashboard.classList.remove('hidden');
