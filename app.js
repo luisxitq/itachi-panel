@@ -648,7 +648,7 @@ function generateKeyString() {
         for (let i = 0; i < 5; i++) s += chars.charAt(Math.floor(Math.random() * chars.length));
         return s;
     };
-    return `LIONX-${segment()}-${segment()}-${segment()}`;
+    return `ITACHI-${segment()}-${segment()}-${segment()}`;
 }
 
 // --- DATA LOADING & STATS ---
